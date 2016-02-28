@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var totalNotes = 0;
 /*
 var AOffset = $("#clefA").position().top;
@@ -24,6 +25,16 @@ var letters = {"c": 1, "c1": 2, "d": 3, "d1": 4, "e": 5, "f": 6, "f1": 7, "g": 8
 console.log()
 function createNote(x){
 	var offset = ((bottom + letters[x]/12) * + bottom);
+=======
+var letters = {"c": 1, "c1": 2, "d": 3, "d1": 4, "e": 5, "f": 6, "f1": 7, "g": 8, "g1": 9, "a": 10, "a1": 11, "a2": 12};
+
+var top = $("#clefC").position().top;
+var bottom = $("#clefB").position().top;
+
+console.log()
+function createNote(x){
+	var offset = ((bottom + letters[x]/12) + bottom);
+>>>>>>> origin/gh-pages
 	console.log(top);
 	console.log(bottom);
 	console.log(x);
@@ -46,6 +57,7 @@ function createNote(x){
 	sound.play();
 }
 
+
 window.addEventListener("keydown", checkKeyPressed, false);
 
 function checkKeyPressed(event) {
@@ -53,13 +65,13 @@ function checkKeyPressed(event) {
 		createNote("c");
 	}
 	if(event.keyCode == 70){
-		createNote("c1");
+		createNote("c-");
 	}
 	if(event.keyCode == 86){
 		createNote("d");
 	}
 	if(event.keyCode == 71){
-		createNote("d1");
+		createNote("d-");
 	}
 	if(event.keyCode == 66){
 		createNote("e");
@@ -68,19 +80,19 @@ function checkKeyPressed(event) {
 		createNote("f");
 	}
 	if(event.keyCode == 74){
-		createNote("f1");
+		createNote("f-");
 	}
 	if(event.keyCode == 77){
 		createNote("g");
 	}
 	if(event.keyCode == 75){
-		createNote("g1");
+		createNote("g-");
 	}
 	if(event.keyCode == 188){
 		createNote("a");
 	}
 	if(event.keyCode == 76){
-		createNote("a1");
+		createNote("a-");
 	}
 	if(event.keyCode == 190){
 		createNote("b");

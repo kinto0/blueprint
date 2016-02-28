@@ -40,7 +40,7 @@ $("#button").click(function(){
 });
 
 window.addEventListener("keydown", checkKeyPressed, false);
- 
+
  function checkKeyPressed(e) {
 if(e.keyCode == 67){
 	createNote(c);

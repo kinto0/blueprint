@@ -70,23 +70,21 @@
   <!-- WHERE THE INSTRUMENT WILL GO -->
   <div id="instrumentstand">
     <div id="instrument">
-      <a onClick="createNote(10)">
       <div id="piano" class="unselectable pianoshadow">
-        <div id="c" class="note leftkey waves-effect waves-ripple"></div>
-        <div id="df" class="note flat waves-effect waves-ripple"></div>
-        <div id="d" class="note waves-effect waves-ripple"></div>
-        <div id="ef" class="note flat waves-effect waves-ripple"></div>
-        <div id="e" class="note waves-effect waves-ripple"></div>
+        <div id="c" class="note leftkey waves-effect waves-ripple" onClick=createNote("c")></div>
+        <div id="c1" class="note flat waves-effect waves-ripple" onClick=createNote("c-")></div>
+        <div id="d" class="note waves-effect waves-ripple" onClick=createNote("d")></div>
+        <div id="d1" class="note flat waves-effect waves-ripple" onClick=createNote("d-")></div>
+        <div id="e" class="note waves-effect waves-ripple" onClick=createNote("e")></div>
         <div id="null" class="note flat null"></div>
-        <div id="f" class="note waves-effect waves-ripple"></div>
-        <div id="gf" class="note flat waves-effect waves-ripple"></div>
-        <div id="g" class="note waves-effect waves-ripple"></div>
-        <div id="af" class="note flat waves-effect waves-ripple"></div>
-        <div id="a" class="note waves-effect waves-ripple"></div>
-        <div id="bf" class="note flat waves-effect waves-ripple"></div>
-        <div id="b" class="note rightkey waves-effect waves-ripple"></div>
+        <div id="f" class="note waves-effect waves-ripple" onClick=createNote("f")></div>
+        <div id="f1" class="note flat waves-effect waves-ripple" onClick=createNote(f-)></div>
+        <div id="g" class="note waves-effect waves-ripple" onClick=createNote("g")></div>
+        <div id="g1" class="note flat waves-effect waves-ripple" onClick=createNote("g-")></div>
+        <div id="a" class="note waves-effect waves-ripple" onClick=createNote("a")></div>
+        <div id="a1" class="note flat waves-effect waves-ripple" onClick=createNote("a-")></div>
+        <div id="b" class="note rightkey waves-effect waves-ripple" onClick=createNote("b")></div>
       </div>
-      </a>
     </div>
   </div>
 
