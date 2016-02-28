@@ -6,6 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -21,6 +26,16 @@
 
 #clef {
   margin-bottom: 1.4rem;
+}
+
+#instrumentstand {
+  background-color: #F0382D;
+  overflow: hidden;
+  height: 25rem;
+}
+
+#instrument {
+  margin: 5% 0 0 35%;
 }
 
 .unselectable{
