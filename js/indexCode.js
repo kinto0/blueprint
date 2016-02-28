@@ -13,9 +13,10 @@ function createNote(x){
  	totalNotes++;
 
 
-
  	//play note
- 	sound = document.getElementById(x);
+  sound = document.getElementById(x);
+	console.log(sound);
+
 	sound.pause();
 	sound.currentTime=0;
 	sound.play();
@@ -28,13 +29,13 @@ function checkKeyPressed(event) {
 		createNote("c");
 	}
 	if(event.keyCode == 70){
-		createNote("c1");
+		createNote("c-");
 	}
 	if(event.keyCode == 86){
 		createNote("d");
 	}
 	if(event.keyCode == 71){
-		createNote("d1");
+		createNote("d-");
 	}
 	if(event.keyCode == 66){
 		createNote("e");
@@ -43,19 +44,19 @@ function checkKeyPressed(event) {
 		createNote("f");
 	}
 	if(event.keyCode == 74){
-		createNote("f1");
+		createNote("f-");
 	}
 	if(event.keyCode == 77){
 		createNote("g");
 	}
 	if(event.keyCode == 75){
-		createNote("g1");
+		createNote("g-");
 	}
 	if(event.keyCode == 188){
 		createNote("a");
 	}
 	if(event.keyCode == 76){
-		createNote("a1");
+		createNote("a-");
 	}
 	if(event.keyCode == 190){
 		createNote("b");
