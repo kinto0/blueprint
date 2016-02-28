@@ -1,0 +1,41 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+#bracket {
+  font-size: 9.6rem;
+  margin-bottom: -11.4rem;
+  margin-top:0px;
+}
+
+#clef {
+  margin-bottom: 1.4rem;
+}
+
+.unselectable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  user-select: none;
+}
+
+.sheetmusic{
+  position:relative;
+}
+
+.flaticon:after {
+  font-size: 150px;
+}
