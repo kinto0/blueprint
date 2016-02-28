@@ -10,7 +10,7 @@ var totalNotes = 0;
 
 function createNote(x){
 	var offset = ((height * letters[x]/12) + 50);
-	var note = ("<i class='flaticon-music' alt='music-note' style='transform:scale(2); color:#" +((1<<24)*Math.random()|0).toString(16) + "; position:absolute; right:0px; top:" + offset + "px;' id='note" + totalNotes + "'>");
+	var note = ("<i class='flaticon-music' alt='music-note' style='transform:scale(2);  position:absolute; right:0px; top:" + offset + "px;' id='note" + totalNotes + "'>");
 
 
   	$("#sheetmusic").append(note);
