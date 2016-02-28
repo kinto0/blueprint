@@ -8,6 +8,7 @@
   background-color: #FFF8F3;
   padding: 2px;
   display: inline-block;
+  vertical-align: initial !important;
   width: 2rem;
   height: 10rem;
   margin: 4.6rem 0.5em 0 -0.15rem;
@@ -16,12 +17,9 @@
   //w: 20, h = w * 5.
 }
 
-.note:active {
-
-}
 
 .flat {
-  background-color: #1C1B1A;
+  background-color: #383838;
   z-index: 10;
   position: relative;
   width: 1.5rem;

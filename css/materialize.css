@@ -8309,12 +8309,12 @@ button.btn-floating {
 .waves-effect .waves-ripple {
   position: absolute;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 7em;
+  height: 7em;
   margin-top: -10px;
   margin-left: -10px;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.6);
   transition: all 0.7s ease-out;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;

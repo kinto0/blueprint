@@ -1,15 +1,26 @@
 * {
-  margin-left: 3rem;
+  margin-left: 0rem;
   margin-top: 5rem;
   background-color: orange;
 }
 
 #guitar {
   transform: scale(2);
+  margin-left: 25rem;
 }
 
 .gpart{
   display: inline-block;
+}
+
+#bridge {
+  height: 1rem;
+  width: 2rem;
+  background-color: black;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-right: -5rem;
+  z-index: 100 !important;
 }
 
 #bot {
