@@ -11,16 +11,20 @@ var d1 = document.getElementById('d-');
 var g1 = document.getElementById('g-');
 var f1 = document.getElementById('f-');
 
-
 function playNote(x){
 	x.play();
 
 }
 
+function createNote(x){
+	x.pause();
+	x.currentTime=0;
+	x.play();
+}
 
 window.addEventListener("keydown", checkKeyPressed, false);
  
- function checkKeyPressed(e) {
+function checkKeyPressed(e) {
 if(e.keyCode == 67){
 	createNote(c);
 }
@@ -58,3 +62,6 @@ if(e.keyCode == 190){
 	createNote(b);
 }
 }
+
+
+
