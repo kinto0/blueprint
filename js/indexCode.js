@@ -1,9 +1,16 @@
-var totalNotes = 0;
+var letters = {"c": 1, "c1": 2, "d": 3, "d1": 4, "e": 5, "f": 6, "f1": 7, "g": 8, "g1": 9, "a": 10, "a1": 11, "a2": 12};
 
+var top = $("#clefC").position().top;
+var bottom = $("#clefB").position().top;
 
-
-
+console.log()
 function createNote(x){
+	var offset = ((bottom + letters[x]/12) + bottom);
+	console.log(top);
+	console.log(bottom);
+	console.log(x);
+	var note = ("<i class='flaticon-music' alt='music-note' style='transform:scale(2); position:absolute; right:0px; top:" + offset + "px;' id='note" + totalNotes + "'>");
+
 
 	topOffset = 0;
 	//topOffset = $(("#clef" + x.toUpperCase()).position().top);
@@ -13,14 +20,14 @@ function createNote(x){
  	totalNotes++;
 
 
- 	//play note
-  sound = document.getElementById(x);
-	console.log(sound);
 
+ 	//play note
+ 	sound = document.getElementById(x);
 	sound.pause();
 	sound.currentTime=0;
 	sound.play();
 }
+
 
 window.addEventListener("keydown", checkKeyPressed, false);
 
