@@ -1,0 +1,56 @@
+* {
+  margin-left: 3rem;
+  margin-top: 5rem;
+  background-color: orange;
+}
+
+#guitar {
+  transform: scale(2);
+}
+
+.gpart{
+  display: inline-block;
+}
+
+#bot {
+  height: 7rem;
+  width: 7rem;
+  background-color: blue;
+  border-radius: 4rem;
+  margin-bottom: -2.8rem;
+  margin-right: -5rem;
+}
+
+#top {
+  height: 5rem;
+  width: 4rem;
+  background-color: blue;
+  border-radius: 3rem;
+  margin-bottom: -1.8rem;
+  margin-right: -6rem;
+}
+
+#soundhole {
+  height: 2rem;
+  width: 2rem;
+  background-color: black;
+  margin-right: -4rem;
+  margin-bottom: -0.2rem;
+  border-radius: 5rem;
+}
+
+#stem {
+  height: 1.5rem;
+  width: 8rem;
+  background-color: black;
+  margin-right: -3.3rem;
+  border-radius: 0.3rem;
+}
+
+#stemhead {
+  background-color: white;
+  height: 2rem;
+  width: 3rem;
+  border-radius: 0.3rem;
+  margin-bottom: -0.2rem;
+}
