@@ -1,74 +1,66 @@
-var a = document.getElementById('a');
-var b = document.getElementById('b');
-var c = document.getElementById('c');
-var d = document.getElementById('d');
-var e = document.getElementById('e');
-var f = document.getElementById('f');
-var g = document.getElementById('g');
-var a1 = document.getElementById('a-');
-var c1 = document.getElementById('c-');
-var d1 = document.getElementById('d-');
-var g1 = document.getElementById('g-');
-var f1 = document.getElementById('f-');
-
-function playNote(x){
-	x.play();
-
-}
-
 var totalNotes = 0;
+
+
+
+
 function createNote(x){
+	
 	topOffset = 0;
-	var note = ("<i class='flaticon-music' alt='music-note' style='position:absolute; right:0px; top:" + topOffset + ";' id='note" + totalNotes + "'>");
+	//topOffset = $(("#clef" + x.toUpperCase()).position().top);
+	var note = ("<i class='flaticon-music' alt='music-note' style='transform:scale(2); position:absolute; right:0px; top:" + topOffset + ";' id='note" + totalNotes + "'>");
   	$("#sheetmusic").append(note);
  	$("#note"  + totalNotes).animate({right: "100%"}, 10000);
  	totalNotes++;
 
-	x.pause();
-	x.currentTime=0;
-	x.play();
+
+
+ 	//play note
+ 	sound = document.getElementById(x);
+	sound.pause();
+	sound.currentTime=0;
+	sound.play();
 
 
 }
 
 window.addEventListener("keydown", checkKeyPressed, false);
  
-function checkKeyPressed(e) {
-if(e.keyCode == 67){
-	createNote(c);
+function checkKeyPressed(event) {
+if(event.keyCode == 67){
+	createNote("c");
 }
-if(e.keyCode == 70){
-	createNote(c1);
+if(event.keyCode == 70){
+	createNote("c1");
 }
-if(e.keyCode == 86){
-	createNote(d);
+if(event.keyCode == 86){
+	createNote("d");
 }
-if(e.keyCode == 71){
-	createNote(d1);
+if(event.keyCode == 71){
+	createNote("d1");
 }
-if(e.keyCode == 66){
-	createNote(e);
+if(event.keyCode == 66){
+	createNote("e");
 }
-if(e.keyCode == 78){
-	createNote(f);
+if(event.keyCode == 78){
+	createNote("f");
 }
-if(e.keyCode == 74){
-	createNote(f1);
+if(event.keyCode == 74){
+	createNote("f1");
 }
-if(e.keyCode == 77){
-	createNote(g);
+if(event.keyCode == 77){
+	createNote("g");
 }
-if(e.keyCode == 75){
-	createNote(g1);
+if(event.keyCode == 75){
+	createNote("g1");
 }
-if(e.keyCode == 188){
-	createNote(a);
+if(event.keyCode == 188){
+	createNote("a");
 }
-if(e.keyCode == 76){
-	createNote(a1);
+if(event.keyCode == 76){
+	createNote("a1");
 }
-if(e.keyCode == 190){
-	createNote(b);
+if(event.keyCode == 190){
+	createNote("b");
 }
 }
 
