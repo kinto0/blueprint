@@ -1,13 +1,29 @@
 var totalNotes = 0;
+/*
+var AOffset = $("#clefA").position().top;
+var A1Offset = (AOffset + BOffset)/2;
+var BOffset = $("#clefB").position().top;
+var COffset = $("#clefC").position().top;
+var C1Offset = (COffset + DOffset)/2;
+var DOffset = $("#clefD").position().top;
+var D1Offset = (DOffset + EOffset)/2;
+var EOffset = $("#clefE").position().top;
+var FOffset = $("#clefF").position().top;
+var F1Offset = FOffset + (FOffset-EOffset)/2;
+*/
 
+var top = $("#clefA").position().top;
+var bottom = $("#clefE").position().top;
 
+var letters = {c: 1, c1: 2, d: 3, d1: 4, e: 5, f: 6, f1: 7, g: 8, g1: 9, a: 10, a1: 11, a2: 12};
 
 
 function createNote(x){
-	
-	topOffset = 0;
-	//topOffset = $(("#clef" + x.toUpperCase()).position().top);
-	var note = ("<i class='flaticon-music' alt='music-note' style='transform:scale(2); position:absolute; right:0px; top:" + topOffset + ";' id='note" + totalNotes + "'>");
+	var offset = ((top-bottom)*letters[x] + bottom);
+	console.log(top);
+	console.log(bottom);
+	console.log(x);
+	var note = ("<i class='flaticon-music' alt='music-note' style='transform:scale(2); position:absolute; right:0px; top:" + offset + "px;' id='note" + totalNotes + "'>");
   	$("#sheetmusic").append(note);
  	$("#note"  + totalNotes).animate({right: "100%"}, 10000);
  	totalNotes++;

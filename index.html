@@ -1,125 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- SOUNDS -->
+  <audio id= "a" src= "./instruments/piano/notes/a.mp3"></audio>
+  <audio id= "a-" src= "./instruments/piano/notes/a-.mp3"></audio>
+  <audio id= "b" src= "./instruments/piano/notes/b.mp3"></audio>
+  <audio id= "c" src= "./instruments/piano/notes/c.mp3"></audio>
+  <audio id= "c-" src= "./instruments/piano/notes/c-.mp3"></audio>
+  <audio id= "d" src= "./instruments/piano/notes/d.mp3"></audio>
+  <audio id= "d-" src= "./instruments/piano/notes/d-.mp3"></audio>
+  <audio id= "e" src= "./instruments/piano/notes/e.mp3"></audio>
+  <audio id= "f" src= "./instruments/piano/notes/f.mp3"></audio>
+  <audio id= "f-" src= "./instruments/piano/notes/f-.mp3"></audio>
+  <audio id= "g" src= "./instruments/piano/notes/g.mp3"></audio>
+  <audio id= "g-" src= "./instruments/piano/notes/g-.mp3"></audio>
+
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>GUItar Hero</title>
+  <title>Starter Template - Materialize</title>
+
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="font/flaticon/flaticon.css">
+  <link rel="stylesheet" type="text/css" href="css/master.css">
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><strong>Rock Band</strong>width</a>
+
+      <!-- navbar button
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
 
+
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
+      -->
+
+<!--      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Play the</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
 
+  <div id="sheetmusic">
+
+    <div>
+      <h1 id="bracket" class="unselectable">{</h1>
+      <!-- <h1 id="bar" class="unselectable">|</h1> -->
+    </div>
+    <!-- Clef music -->
+    <br />
+    <hr id = "clefA" class="clef"/> <!-- G#/A♭ A  -->
+    <hr id = "clefF" class="clef"/> <!-- A#/B♭ B  -->
+    <hr id = "clefD" class="clef"/> <!-- C C#/D♭  -->
+    <hr id = "clefB" class="clef"/> <!-- D D#/E♭  -->
+    <hr id = "clefG" class="clef"/> <!-- F F#/G♭  -->
+    <hr id = "clefE" class="clef"/> <!-- G  -->
+
+    <hr id= "clef" class="unselectable" />
+
+  </div>
+
+  <br  />
+
+
+
+  <!-- WHERE THE INSTRUMENT WILL GO -->
+  <div id="instrumentstand">
+    <div id="instrument">
+      <a>
+      <div id="piano" class="unselectable pianoshadow">
+        <div id="g" class="note leftkey waves-effect waves-ripple"></div>
+        <div id="af" class="note flat waves-effect waves-ripple"></div>
+        <div id="a" class="note waves-effect waves-ripple"></div>
+        <div id="bf" class="note flat waves-effect waves-ripple"></div>
+        <div id="b" class="note waves-effect waves-ripple"></div>
+        <div id="null" class="note flat null"></div>
+        <div id="c" class="note waves-effect waves-ripple"></div>
+        <div id="df" class="note flat waves-effect waves-ripple"></div>
+        <div id="d" class="note waves-effect waves-ripple"></div>
+        <div id="ef" class="note flat waves-effect waves-ripple"></div>
+        <div id="f" class="note waves-effect waves-ripple"></div>
+        <div id="gf" class="note flat waves-effect waves-ripple"></div>
+        <div id="g" class="note rightkey waves-effect waves-ripple"></div>
+      </div>
+      </a>
     </div>
   </div>
 
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-
-    <div class="section">
-
-    </div>
-  </div>
-
+  <!-- FOOTER -->
   <footer class="page-footer orange" style="margin-top:0">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Font generated by <a href="http://www.flaticon.com">flaticon.com</a>. <p>Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="music" href="http://www.freepik.com">Freepik</a></p>
+
       </div>
     </div>
   </footer>
+
+
+  <!-- FAB -->
+    <div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="large mdi-navigation-menu"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="flaticon-icon-1222"></i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="flaticon-icon-1341"></i></a></li>
+      <li><a class="btn-floating green"><i class="flaticon-icon-26304"></i></a></li>
+    </ul>
+  </div>
+
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/indexCode.js"></script>
 
   </body>
 </html>
