@@ -16,10 +16,19 @@ function playNote(x){
 
 }
 
+var totalNotes = 0;
 function createNote(x){
+	topOffset = 0;
+	var note = ("<i class='flaticon-music' alt='music-note' style='position:absolute; right:0px; top:" + topOffset + ";' id='note" + totalNotes + "'>");
+  	$("#sheetmusic").append(note);
+ 	$("#note"  + totalNotes).animate({right: "100%"}, 10000);
+ 	totalNotes++;
+
 	x.pause();
 	x.currentTime=0;
 	x.play();
+
+
 }
 
 window.addEventListener("keydown", checkKeyPressed, false);
