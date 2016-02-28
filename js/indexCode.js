@@ -14,7 +14,7 @@ function createNote(x){
 
 
   	$("#sheetmusic").append(note);
- 	$("#note"  + totalNotes).animate({right: "100%"}, 10000);
+ 	$("#note"  + totalNotes).animate({right: "102%"}, 10000);
  	totalNotes++;
 
 
