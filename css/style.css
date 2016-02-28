@@ -13,13 +13,13 @@
 	font-size: inherit;
 }
 
-#clef {
-  margin-bottom: 15px;
+#bracket {
+  font-size: 9.6rem;
+  margin-bottom: -11.4rem;
 }
 
-#bracket {
-  margin-bottom: -7.8rem;
-  font-size: 6rem;
+#clef {
+  margin-bottom: 1.4rem;
 }
 
 .unselectable{

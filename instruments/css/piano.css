@@ -1,0 +1,20 @@
+* {
+  background-color: green;
+}
+
+#piano {
+
+}
+
+.note {
+  background-color: white;
+  border: 1px solid black;
+  padding: 2px;
+  display: inline-block;
+  height: 4.5rem;
+  width: 4rem; //8
+}
+
+.flat {
+  background-color: black;
+}
