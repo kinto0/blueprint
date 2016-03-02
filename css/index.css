@@ -31,11 +31,14 @@ body {
 #instrumentstand {
   background-color: #F0382D;
   overflow: hidden;
-  height: 25rem;
 }
 
 #instrument {
-  margin: 5rem 0 0 35%;
+  margin: auto;
+  width:25rem;
+  height:15rem;
+  margin-top:5rem;
+  margin-bottom:5rem;
 }
 
 .unselectable{

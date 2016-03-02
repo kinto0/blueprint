@@ -34,8 +34,13 @@
 
 .sheetmusic{
   position:relative;
+  overflow: hidden;
 }
 
 .flaticon:after {
   font-size: 150px;
+}
+
+#body{
+  overflow-x:hidden;
 }
