@@ -27,6 +27,7 @@ function createNote(x){
 }
 
 //resize instrument stand to page size
+
 var $header = $('#navBar');
 var $footer = $('#footer');
 var $sheetMusic = $('#sheetmusic');
@@ -35,9 +36,13 @@ var $instrument = $("#instrument");
 
 var $window = $(window).on('resize', function(){
    var standHeight = $(window).height() - $header.height() - $footer.height() - $sheetMusic.height()-$instrument.height() -41;
-   $instrument.css("margin-top", standHeight/2);
-   $instrument.css("margin-bottom", standHeight/2);
+   if(standHeight > $instrument.height()/2){
+   	console.log(standHeight);
+   	   $instrument.css("margin-top", standHeight/2);
+   		$instrument.css("margin-bottom", standHeight/2);
+   }
 }).trigger('resize'); //on page load
+
 
 
 window.addEventListener("keydown", checkKeyPressed, false);
